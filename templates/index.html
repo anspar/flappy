@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anspar Flappy</title>
+    {{import_css "static/css/index.css"}}
+</head>
+<body onclick="jump()">
+    <span style="font-size: 24px; font-weight: bold; position: relative;" id="score">Score: 0</span>
+    <span style="font-size: 18px; position: relative;">Best: <span id="best">0</span></span>
+    <div id="game">
+        <div id="block"></div>
+        <div id="hole"></div>
+        <div id="character">
+            <div style="background-color: white; width:12px; height:5px; border-radius: 50%"></div>
+            <div
+                style="background-color: white; width:3px; height:3px; border-radius: 50%; position:relative; top: -4px; right: -5px;">
+            </div>
+            <div
+                style="background-color: black; width:8px; height:5px; border-radius: 50%; position:relative; right: -8px;">
+            </div>
+            <div style="position:absolute; right: -20px;" id="countdown">
+                3
+            </div>
+        </div>
+    </div>
+    <br>
+    <span style="font-size: 16; font-weight: bold;">Press SPACEBAR to start</span>
+    {{import_js "static/js/index.js"}}
+</body>
+</html>
+            
